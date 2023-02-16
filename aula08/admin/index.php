@@ -1,3 +1,4 @@
+<?php include_once("./config/seguranca.php");?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-
+<?php echo "Olá, " . $_SESSION['NOME_USUARIO_ADMIN']; ?>
 <ul>
 <li><a href="gestao-genero.php"> Cadastar categoria</a></li>
     <li><a href=""> Cadastar Situação</a></li>

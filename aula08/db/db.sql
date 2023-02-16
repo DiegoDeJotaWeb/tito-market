@@ -68,7 +68,22 @@ CREATE TABLE acessos(
 idAcesso int auto_increment primary key,
 usuario varchar(30),
 senha varchar(120),
+tipoAcesso char(10),
 usuarioID int,
 situacaoID int
 );
+
+CREATE TABLE tbl_admins(
+	idAdmin INT AUTO_INCREMENT PRIMARY KEY,
+	nomeAdmin varchar(255),
+	sobrenomeAdmin varchar(255),
+	dataNascimentoAdmin date,
+    situacaoID int  
+);
+
+
+
+
+
+
 

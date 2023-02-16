@@ -4,11 +4,9 @@
 
 session_start();
 
-if($_SESSION['ID_USUARIO']){
+if($_SESSION['ID_USUARIO_ADMIN']){
 
 }else{
-    header("Location: login.php");
+    header("Location: ../login.php");
 }
-
-
 ?>
